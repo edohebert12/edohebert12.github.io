@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,62 +8,12 @@
         ("https:" == document.location.protocol) ? "https://" : "http://",
         "ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js' type='text/javascript'>\<\/script>" 
     ].join(''));
-
-function popup(page) {
-	var s=''
-	while  (s.length<10) {
-  	t = (48 + Math.round(Math.random() * 74))
-  	r = ((t<58) || ((t>64) && (t<91)) || ((t>96) && (t<123))) ? String.fromCharCode(t) : ''
-  	s += r
-  	}
-	//alert(s);
-	window.open(page,s,"width=775,height=600,screenX=0,screenY=0,top=0,left=0,location=no,statusbar=yes,toolbar=yes,scrollbars=yes,titlebar=no,resizable=yes");
 }
 
 
 </script>
 
 <title>FactWeb</title>
-<style type="text/css">
-<!--
-body {
-	margin-top: 0px;
-	background-color: #FFFFFF;
-}
-.main_text {
-	font-family: "Segoe UI", "Times New Roman";
-	font-size: 16px;
-	color: #000000;
-	font-style: italic;
-}
-.style3 {color: #FF0000}
-.style10 {
-	font-family: "Segoe UI", "Times New Roman";
-	font-size: 11px;
-}
-.style12 {font-style: italic; color: #000000;}
-
-button {
-  width:111px;
-  height:91px;
-  float:left;
-  border:none;
-  margin:0.9em;
-}
-.small_button {
-  width:111px;
-  height:46px;
-}
-button:hover {
-    margin-top: 0.2em;
-    -moz-box-shadow: 0px 0px 4px 1px grey;
-    -webkit-box-shadow: 0px 0px 4px 1px grey;
-    box-shadow: 0px 0px 4px 1px  grey;
-}
--->
-</style>
-
-
 
 </head>
 

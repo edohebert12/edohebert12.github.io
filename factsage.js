@@ -15,6 +15,10 @@ function emptyXML() {
 
 function activate(s)
 {
-	document.getElementsByClassName("active")[0].classList.remove("active");
+	var active = document.getElementsByClassName("active")[0];
+	if(active !== undefined)
+	{
+		active.classList.remove("active");
+	}
 	document.getElementById(s).classList.add("active");
 }

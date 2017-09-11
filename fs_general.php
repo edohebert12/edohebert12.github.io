@@ -32,19 +32,19 @@ A:hover {
                       <font size="2" face="Arial, Helvetica, sans-serif"> </font>
                       <table width="100%" border="0" cellspacing="1" cellpadding="0">
                         <tr> 
-                          <td><font size="2" face="Arial, Helvetica, sans-serif"><font size="4"><font size="5"><img src="https://github.com/edohebert12/edohebert12.github.io/blob/master/factsage55_s.jpg" width="150" height="125" align="left"></font></font></font></td>
+                          <td><font size="2" face="Arial, Helvetica, sans-serif"><font size="4"><font size="5"><img src="http://www.crct.polymtl.ca/factsage/factsage55_s.jpg" width="150" height="125" align="left"></font></font></font></td>
                           <td><center>
                               <font size="2" face="Arial, Helvetica, sans-serif"><font size="4"><font size="5">General 
                               information<br>
                               </font></font></font> 
                             </center>
-                            <div align="center"> <font size="3" face="Arial, Helvetica, sans-serif"><strong><font color="#003399"><img src="https://github.com/edohebert12/edohebert12.github.io/blob/master/fact_sage_logo_petit.jpg" width="90" height="30" align="absmiddle"></font> 
+                            <div align="center"> <font size="3" face="Arial, Helvetica, sans-serif"><strong><font color="#003399"><img src="http://www.crct.polymtl.ca/fact/images/fact_sage_logo_petit.jpg" width="90" height="30" align="absmiddle"></font> 
                               <br>
                               The Integrated Thermodynamic Databank System</strong></font> 
                             </div></td>
                           <td><center>
                               <br>
-                              <img src="https://github.com/edohebert12/edohebert12.github.io/blob/master/FactSage-TR.jpg" width="150" height="130"> 
+                              <img src="http://www.crct.polymtl.ca/factsage/FactSage-TR.jpg" width="150" height="130"> 
                             </center>
                             </td>
                         </tr>

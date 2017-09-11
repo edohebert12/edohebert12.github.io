@@ -68,7 +68,7 @@
 	top: 160px;
 	z-index: 1;
 	border: mix;
-	border-style: solid solid none none;
+	border-style: solid solid solid none;
 }
 
 .vertical-menu a {

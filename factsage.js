@@ -8,3 +8,7 @@ function loadXML(s) {
 	xhttp.open("GET", s, true);
 	xhttp.send();
 }
+
+function emptyXML() {
+	document.getElementById("php-content").innerHTML = "";
+}

@@ -90,7 +90,7 @@ FactSage
 	</div>
 	<br>
 	<div class="vertical-menu">
-	  <a href="javascript:loadXML('fs_general.php');" id="vm1" onclick="javascript:activate('vm1');">Introduction</a>
+	  <a href="javascript:loadXML('fs_general.php');" id="vm1" onclick="javascript:activate('vm1');" class="active">Introduction</a>
 	  <a href="http://www.crct.polymtl.ca/fact/documentation/" target="_blank" id="vm2" onclick="javascript:activate('vm2');">Database Documentation</a>
 	  <a href="http://www.crct.polymtl.ca/factsage/FactSage_Applications/" target="_blank" id="vm3" onclick="javascript:activate('vm3');">FactSage Applications</a>
 	  <a href="javascript:emptyXML();" id="vm4" onclick="javascript:activate('vm4');">Posters and Publications</a>
@@ -109,6 +109,10 @@ FactSage
 	<div id="php-content" class="php-content">
 	
 	</div>
+	
+	<script>
+		loadXML('fs_general.php');
+	</script>
 
 </body>
 </html>

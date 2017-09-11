@@ -1,5 +1,10 @@
-<p style="font-family:verdana">
-	<a href="mailto:crct@polymtl.ca">Email Address</a>
-	<br>
-	<a href="http://www.crct.polymtl.ca" target="_blank">Our Website</a>
-</p>
+<style>
+.a
+{
+	font-family: verdana;
+}
+</style>
+
+<a href="mailto:crct@polymtl.ca">Email Address</a>
+<br>
+<a href="http://www.crct.polymtl.ca" target="_blank">Our Website</a>

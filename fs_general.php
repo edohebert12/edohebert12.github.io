@@ -4,13 +4,13 @@
 <title>FactSage.com - Introduction to FactSage</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <STYLE>
-A:link {
+.sample a:link {
 	FONT-WEIGHT: bold; COLOR: #0066cc; TEXT-DECORATION: none
 }
-A:visited {
+.sample a:visited {
 	COLOR: #660000; FONT-WEIGHT:bold; TEXT-DECORATION: none
 }
-A:hover {
+.sample a:hover {
 	COLOR: #000066; BACKGROUND-COLOR: lightgrey; TEXT-DECORATION: none
 }
 .link {
@@ -20,7 +20,7 @@ A:hover {
 </head>
 
 <body bgcolor="#666666">
-<table width="95%" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#000066">
+<table class="sample" width="95%" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#000066">
   <tr>
     <td><table width="100%" border="0" align="center" cellpadding="15" cellspacing="0" bgcolor="#999999">
         <tr> 
@@ -179,7 +179,7 @@ A:hover {
   </tr>
 </table>
 </font> 
-<table width="580" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#666666">
+<table class="sample" width="580" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#666666">
   <tr> 
     <td width="33%"><font color="#FFFFFF" size="1" face="Trebuchet MS, Arial">&copy; 
       <a href="mailto:crct@polymtl.ca"><font color="#FFFFFF">CRCT</font></a> 2006-2017 

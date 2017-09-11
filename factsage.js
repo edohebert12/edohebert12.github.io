@@ -12,3 +12,9 @@ function loadXML(s) {
 function emptyXML() {
 	document.getElementById("php-content").innerHTML = "";
 }
+
+function activate(s)
+{
+	document.getElementsByClassName("active")[0].classList.remove("active");
+	document.getElementById(s).classList.add("active");
+}

@@ -9,7 +9,7 @@ function loadXML() {
 			console.log("nope");
 		}
 	};
-	xhttp.open("GET", "https://www.w3schools.com/xml/xmlhttp_info.txt", false);
+	xhttp.open("GET", "fs_general.php", false);
 	xhttp.send();
 	document.getElementById("php-content").innerHTML = "LOL";
 }

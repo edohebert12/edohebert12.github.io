@@ -77,6 +77,7 @@
     display: block;
     padding: 12px;
     text-decoration: none;
+	font-family: verdana;
 }
 
 .vertical-menu a:hover {

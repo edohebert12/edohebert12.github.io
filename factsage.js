@@ -22,3 +22,8 @@ function activate(s)
 	}
 	document.getElementById(s).classList.add("active");
 }
+
+document.onload = function() {
+	activate("vm1");
+	loadXML("fs_general.php");
+}

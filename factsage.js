@@ -9,7 +9,7 @@ function loadXML() {
 			console.log("nope");
 		}
 	};
-	xhttp.open("GET", "fs_general.php", false);
+	xhttp.open("GET", "fs_general.php", true);
 	xhttp.send();
 	document.getElementById("php-content").innerHTML = "LOL";
 }

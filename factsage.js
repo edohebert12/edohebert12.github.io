@@ -5,6 +5,9 @@ function loadXML() {
 		if (this.readyState == 4 && this.status == 200) {
 		    document.getElementById("php-content").innerHTML = this.responseText;
 		}
+		else{
+			console.log("nope");
+		}
 	};
 	xhttp.open("GET", "https://www.w3schools.com/xml/xmlhttp_info.txt", false);
 	xhttp.send();

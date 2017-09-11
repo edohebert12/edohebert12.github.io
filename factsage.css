@@ -1,7 +1,7 @@
 .menu-bar
 {
 	position: absolute;
-	background-color: #82878B;
+	background-color: #5C6063;
 	box-shadow: 0px 2px 2px #414141;
 	width: 100%;
 	left: 0px;
@@ -17,7 +17,7 @@
 }
 
 .dropbtn {
-	background-color: #82878B;
+	background-color: #5C6063;
 	color: white;
     padding: 16px;
 	padding-left: 25px;

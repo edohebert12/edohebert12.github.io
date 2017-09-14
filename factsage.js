@@ -1,3 +1,5 @@
+var fixed = false;
+
 function loadXML(s) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
@@ -23,7 +25,18 @@ function activate(s)
 	document.getElementById(s).classList.add("active");
 }
 
-document.onload = function() {
-	activate("vm1");
-	loadXML("fs_general.php");
+function bodyScroll()
+{
+	if(document.body.scrollTop >= 110 && !fixed)
+	{
+		document.getElementsByClassName("menu-bar")[0].style.position = "fixed";
+		document.getElementsByClassName("menu-bar")[0].style.top = "0px";
+		fixed = true;
+	}
+	else if(document.body.scrollTop < 110 && fixed)
+	{
+		document.getElementsByClassName("menu-bar")[0].style.position = "absolute";
+		document.getElementsByClassName("menu-bar")[0].style.top = "110px";
+		fixed = false;
+	}
 }

@@ -1,3 +1,4 @@
+/* Navigation bar */
 .menu-bar
 {
 	position: absolute;
@@ -61,6 +62,7 @@
     background-color: #32373B;
 }
 
+/* Vertical menu */
 .vertical-menu {
     background-color: #EEEEEE;
     width: 13%;
@@ -91,6 +93,7 @@
     color: white;
 }
 
+/* Content */
 .php-content
 {
 	position: absolute;

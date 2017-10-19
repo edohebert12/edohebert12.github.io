@@ -1,0 +1,32 @@
+.container-fluid{
+    margin-left: 50px;
+}
+
+.pagination {
+    margin-left: 50px;
+}
+.form-control {
+    margin-left: 50px;
+    width: 350px;
+}
+
+.autocomplete-results{
+    font-size:13px;
+    max-height: 150px;
+    width: 350px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.localisation {
+    margin-left: 50px;
+}
+
+#map {
+    height: 100%;
+    width: 150px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }

@@ -1,32 +1,52 @@
 var selector = '.pagination li';
+var map;
+var stations;
+var marker;
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
 
+$.ajax({
+	url: 'https://secure.bixi.com/data/stations.json',
+	dataType: 'json',
+	success: function(data){
+		stations = $.map(data.stations, function(item){ return item.s; });
+	}
+});
+
 $("#recherche").autocomplete({
-    source : function(requete,reponse){
-        $.ajax({
-            url:'https://secure.bixi.com/data/stations.json',
-            dataType:'json',
-            success: function(data){
-                var array = $.map(data.stations, function (item) {
-                    return item.s;
-            });
-            reponse($.ui.autocomplete.filter(array,$('#recherche').val()));
-        }});
-        minLength:2
-    },
-    select: function(event,ui){
-    $(".localisation .station").text(ui.item.label);
-    }
-
-
+    source : function(request, reponse){
+		reponse($.ui.autocomplete.filter(stations,$('#recherche').val()));
+	},
+	minLength: 2,
+	select: function(event,ui) {
+		$(".localisation .station").text(ui.item.label);
+		$.ajax({
+			url: 'https://secure.bixi.com/data/stations.json',
+			dataType: 'json',
+			success: function(data){
+				var station = data.stations.find(function(item){
+					return item.s === ui.item.label;
+				});
+				var pos = new google.maps.LatLng(station.la, station.lo);
+				map.panTo(pos);
+				map.setZoom(16);
+				if(marker == undefined) {
+					marker = new google.maps.Marker({map: map});
+				}
+				marker.setPosition(pos);
+			}
+		});
+	}
 });
 $("#recherche").autocomplete("widget").addClass("autocomplete-results");
 
-var map = new google.maps.Map(document.getElementById("map"), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
-});
+function loadMap() {
+	map = new google.maps.Map(document.getElementById("map"),
+	{
+		center: {lat: 45.50723, lng: -73.615085},
+		zoom: 14
+	});
+}

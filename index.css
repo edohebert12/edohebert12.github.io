@@ -1,4 +1,4 @@
-.container-fluid{
+.container-fluid {
     margin-left: 50px;
 }
 
@@ -24,8 +24,8 @@
 }
 
 #map {
-    height: 30%;
-	width: 90%;
+    height: 675px;
+	width: 1200px;
     position: relative;
     top: 0;
     left: 50px;

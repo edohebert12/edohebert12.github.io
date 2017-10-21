@@ -5,7 +5,8 @@ var marker;
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
-    $(this).addClass('active');
+	$(this).addClass('active');
+	
 });
 
 $.ajax({
@@ -20,7 +21,7 @@ $("#recherche").autocomplete({
     source : function(request, reponse){
 		reponse($.ui.autocomplete.filter(stations,$('#recherche').val()));
 	},
-	minLength: 2,
+	minLength: 1,
 	select: function(event,ui) {
 		$(".localisation .station").text(ui.item.label);
 		$.ajax({
@@ -36,12 +37,42 @@ $("#recherche").autocomplete({
 				if(marker == undefined) {
 					marker = new google.maps.Marker({map: map});
 				}
+				updateNameColor("#station-id",station.id);
+				updateNameColor("#blq",station.b)
+				updateNameColor("#velos-dispo",station.ba);
+				updateNameColor("#bornes-dispo",station.da);
+				updateNameColor("#susp",station.su);
+				updateNameColor("#velos-indispo",station.bx);
+				updateNameColor("#hs",station.m)
+				updateNameColor("#bornes-indispo",station.dx)
+	
 				marker.setPosition(pos);
 			}
 		});
 	}
 });
 $("#recherche").autocomplete("widget").addClass("autocomplete-results");
+
+function updateNameColor(selector,value){
+	if(typeof(value) === "boolean"){	
+		if(value==false){
+			$(selector).text("Non");
+			$(selector).css("background-color", "green");
+		} else{
+		$(selector).text("Oui");
+		$(selector).css("background-color", "red");		
+		}
+	}else{
+		if(selector == "#velos-dispo" || selector == "#bornes-dispo"){
+			if(value <= 3) {
+				$(selector).css("background-color", "red");
+			} else {
+				$(selector).css("background-color", "green");
+			}
+		} 
+	$(selector).text(value);
+	}
+}
 
 function loadMap() {
 	map = new google.maps.Map(document.getElementById("map"),

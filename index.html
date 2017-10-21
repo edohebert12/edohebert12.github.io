@@ -28,12 +28,47 @@
             <li><a href="#">Liste des stations</a></li>
     </ul>
 
-    <input type="text" class="form-control" id="recherche" >
-
-    <div class=localisation>
-        <h2 class='title'>Localisation:</h2>
-        <p class='station'>Aucune</p>
+    <div class="container-fluid">
+        <div class="col-md-4">
+            <div class=localisation>
+                <input type="text" class="form-control" id="recherche" >
+                <h2 class='title'>Localisation:</h2>
+                <p class='station'>Aucune</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class=etat>
+                <h2 class='title'>État de la station de vélos</h2>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="30">
+                    </div>
+                  </div>
+                  <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>ID Station <span id="station-id">-</span></td>
+                            <td>Vélos Disponibles<span id="velos-dispo">-</span></td>
+                          </tr>
+                          <tr>
+                            <td>Bloquée<span id="blq">-</span></td>
+                            <td>Bornes Disponibles<span id="bornes-dispo">-</span></td>
+                          </tr>
+                          <tr>
+                            <td>Suspendue<span id="susp">-</span></td>
+                            <td>Vélos Indisponibles<span id="velos-indispo">-</span></td>
+                          </tr>
+                          <tr>
+                            <td>Hors service<span id="hs">-</span></td>
+                            <td>Bornes Indisponibles<span id="bornes-indispo">-</span></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+            </div>
+        </div>
     </div>
+    
 	
 	<div id="map"></div>
 	<br>

@@ -6,7 +6,6 @@
     margin-left: 50px;
 }
 .form-control {
-    margin-left: 50px;
     width: 350px;
 }
 
@@ -19,14 +18,49 @@
     overflow-x: hidden;
 }
 
-.localisation {
+.container-fluid{
     margin-left: 50px;
+    padding: 0;
+}
+
+.col-md-4,.col-md-8{
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-8{
+    margin-top:-50px;
 }
 
 #map {
-    height: 675px;
-	width: 1200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 60vh;
     position: relative;
-    top: 0;
-    left: 50px;
   }
+
+.container-fluid .col-md-8 .etat .progress {
+    width: 90%; 
+    margin: 0;
+}
+
+.container-fluid .col-md-8 .etat .progress .progress-bar {
+    width: 100%; 
+}
+
+.table{
+    width: 915px;
+}
+
+.table span{
+    margin-right: 150px;
+    float: right;
+    text-align: center;
+	min-width: 30px;
+    border-radius: 10px;
+    background-color:#7f8c8d;
+    color: white;
+    font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+}

@@ -6,8 +6,49 @@ var marker;
 $(selector).on('click', function(){
     $(selector).removeClass('active');
 	$(this).addClass('active');
-	
+	if(this.id === "liste") {
+		unloadSection1();
+		loadSection2();
+	}
+	else {
+		loadSection1();
+		unloadSection2();
+	}
 });
+
+function loadSection1() {
+	$('.section1').show();
+}
+
+function unloadSection1() {
+	$('.section1').hide();
+}
+
+function loadSection2() {
+	$.ajax({
+		url: 'https://secure.bixi.com/data/stations.json',
+		dataType: 'json',
+		success: function(data){
+			var tableBody = $('#liste-des-stations')[0].getElementsByTagName('tbody')[0]
+			tableBody.innerHTML = "";
+			for(var index in data.stations) {
+				var s = data.stations[index];
+				tableBody.innerHTML += "<tr><td>" + s.id.toString() + "</td><td>" + s.s + "</td><td>" + s.ba + "</td><td>" + s.da + "</td><td>" + s.b + "</td><td>" + s.su + "</tr>";
+			}
+			$('#liste-des-stations').DataTable();
+		},
+		error: function(a, b){
+			console.log(b);
+		}
+	});
+	$('.section2').show();
+}
+
+function unloadSection2() {
+	$(".section2").hide();
+}
+
+$(".progress").css("width", ($(".table-bordered").width() + 2).toString() + "px");
 
 $.ajax({
 	url: 'https://secure.bixi.com/data/stations.json',

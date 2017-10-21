@@ -65,6 +65,13 @@
     padding-right: 4px;
 }
 
+.section2{
+	display: none;
+}
+
+.liste-des-stations{
+	margin-left: 50px;
+}
 .table tr:nth-child(even) {
     background-color: #ecf0f1;
 }

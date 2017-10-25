@@ -34,7 +34,7 @@ function loadSection2() {
 			tableBody.innerHTML = "";
 			for(var index in data.stations) {
 				var s = data.stations[index];
-				tableBody.innerHTML += "<tr><td>" + s.id.toString() + "</td><td>" + s.s + "</td><td>" + s.ba + "</td><td>" + s.da + "</td><td>" + s.b + "</td><td>" + s.su + "</tr>";
+				tableBody.innerHTML += "<tr><td>" + s.id.toString() + "</td><td>" + s.s + "</td><td>" + s.ba + "</td><td>" + s.da + "</td><td>" + (s.b ? "oui" : "non") + "</td><td>" + (s.su ? "oui" : "non") + "</tr>";
 			}
 			if(table != undefined) {
 				table.destroy();
@@ -43,13 +43,20 @@ function loadSection2() {
 				"language": {
 					"url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/French.json"
 				},
-				//"pageLength": 10
+				"dom": '<"top"f>rt<"bottom"<"table-page"li><"page-numbers"p>><"clear">'
 			});
+			
 		},
 		error: function(a, b){
 			console.log(b);
 		}
 	});
+	setTimeout(function(){
+		$(".bottom").css("width", $("#liste-des-stations").width());
+		$(".table-page").css("float", "left");
+		$(".page-numbers").css("float", "right");
+	}, 2000);
+	
 	$('.section2').show();
 }
 

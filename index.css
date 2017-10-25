@@ -72,6 +72,3 @@
 .liste-des-stations{
 	margin-left: 50px;
 }
-.table tr:nth-child(even) {
-    background-color: #ecf0f1;
-}

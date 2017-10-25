@@ -2,6 +2,7 @@ var selector = '.pagination li';
 var map;
 var stations;
 var marker;
+var table;
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
@@ -35,7 +36,15 @@ function loadSection2() {
 				var s = data.stations[index];
 				tableBody.innerHTML += "<tr><td>" + s.id.toString() + "</td><td>" + s.s + "</td><td>" + s.ba + "</td><td>" + s.da + "</td><td>" + s.b + "</td><td>" + s.su + "</tr>";
 			}
-			$('#liste-des-stations').DataTable();
+			if(table != undefined) {
+				table.destroy();
+			}
+			table = $('#liste-des-stations').DataTable({
+				"language": {
+					"url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/French.json"
+				},
+				//"pageLength": 10
+			});
 		},
 		error: function(a, b){
 			console.log(b);

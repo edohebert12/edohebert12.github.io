@@ -100,10 +100,10 @@ $("#recherche").autocomplete("widget").addClass("autocomplete-results");
 function updateNameColor(selector,value){
 	if(typeof(value) === "boolean"){	
 		if(value==false){
-			$(selector).text("Non");
+			$(selector).text("No");
 			$(selector).css("background-color", "green");
 		} else{
-		$(selector).text("Oui");
+		$(selector).text("Yes");
 		$(selector).css("background-color", "red");		
 		}
 	}else{

@@ -12,15 +12,15 @@ $("#thermostat").slider({
       $("#tdValeurThermostat").text( ui.value );
     }
   });
-
+/*
 var progressbar = $("#thermometre").progressbar({
 						max: 100,
 						value: 69,
-					});
+					});*/
 
-progressbar.children().css("background", "#a40000");
+/*progressbar.children().css("background", "#a40000");
 progressbar.removeClass("ui-corner-all");
-progressbar.children().removeClass("ui-corner-left");
+progressbar.children().removeClass("ui-corner-left");*/
 slider.css("border", "1px solid #8888ff");
 slider.css("background", "#d9d9e7");
 $(".ui-slider-handle").css("border", "1px solid #8888ff");

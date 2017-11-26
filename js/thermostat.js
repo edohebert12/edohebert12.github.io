@@ -9,7 +9,7 @@ $(function () {
     });
 
     $("#thermostat").slider({
-        change: function(event, ui) {
+        slide: function(event, ui) {
         $("#tdValeurThermostat").text( ui.value );
         }
     });

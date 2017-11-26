@@ -105,6 +105,13 @@ html {
 	font-size: 120%;
 }
 
+.barre {
+	position: fixed;
+	width: 1%;
+	border-color: blue;
+	right: 15.3%;
+}
+
 meter::-webkit-meter-bar {
   background: none;
   background-color: #eeeeee;
@@ -115,3 +122,17 @@ meter::-webkit-meter-optimum-value {
   background: none;
   background-color: #a40000;
 }
+
+#h1 {top: 9.4%;}
+#h2 {top: 21.35%;}
+#h3 {top: 33.3%;}
+#h4 {top: 45.25%;}
+#h5 {top: 57.2%;}
+#h6 {top: 69.15%;}
+
+#g1 {top: 10.27%;}
+#g2 {top: 22.22%;}
+#g3 {top: 34.17%;}
+#g4 {top: 46.12%;}
+#g5 {top: 58.07%;}
+#g6 {top: 69.9%;}

@@ -2,26 +2,23 @@
 <html>
 <head>
 	<title>TP3 Interface</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/thermostat.css">
 	<meta charset="UTF-8">
 	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">  
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="chambre.js"></script>
-</head>
-<body style="background-color: #b5b5b5;">
 
+	<!-- Bootstrap + JqueryUi CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"></script>
+</head>
+<body>
+	<!-- Main Container -->
 	<div class="content">
-		<meter id="thermometre" value="19" min="-50" max="50"></meter>
-		<div id="temperature">19</div>
+		<meter id="thermometre" value="10" min="-50" max="50"></meter>
+		<div id="temperature">10</div>
 		<div id="thermostat"></div>
 	</div>
-	
+
+	<!-- Affichage du texte -->
 	<div class="tdtext" id="chauffage">Chauffage:</div>
 	<div class="tdtext" id="actif">INACTIF</div>
 	<div class="tdtext" id="tempExt">Température extérieure:</div>
@@ -29,6 +26,8 @@
 	<div class="tdtext" id="txtThermostat">Thermostat:</div>
 	<div class="tdtext" id="tdValeurThermostat">20</div>
 	
+
+	<!-- Graduation du thermostat	-->
 	<hr style="position: fixed; width: 1%; border-color: blue; top: 9.4%; right: 15.3%;">
 	<label class="grad" style="top: 10.27%">40</label>
 	<hr style="position: fixed; width: 1%; border-color: blue; top: 21.35%; right: 15.3%;">
@@ -46,7 +45,10 @@
 	<div class="tdtext" id="nThermometre">Thermomètre</div>
 	
 	
-	<script src="thermostat.js"></script>
-	
+	<!-- Importation des scripts -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+	<script src="js/thermostat.js"></script>
+	<script src="js/chambre.js"></script>
 </body>
 </html>

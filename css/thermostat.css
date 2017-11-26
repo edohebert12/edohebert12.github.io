@@ -1,0 +1,117 @@
+html {
+	background-color: #b5b5b5;
+}
+
+.content {
+	position: absolute;
+	top: 11.4%;
+	left: 10.8%;
+	height: 60.1%;
+	width: 75.2%;
+}
+
+.tdtext {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+#thermometre {
+	position: fixed;
+	left: -2.9%;
+	top: 39%;
+	width: 30%;
+	height: 5%;
+	-ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#temperature {
+	position: relative;
+	font-size: 150%;
+	font-weight: bold;
+	width: 8%;
+	height: 5%;
+	top: 45%;
+	left: 0.8%;
+}
+
+#thermostat {
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	left: 95%;
+}
+
+#actif {
+	position: fixed;
+	right: 40%;
+	top: 30%;
+	text-align: right;
+}
+
+#chauffage {
+	position: fixed;
+	left: 35%;
+	top: 30%;
+}
+
+#tempExt {
+	position: fixed;
+	left: 35%;
+	top: 35%;
+}
+
+#valTempExt {
+	position: fixed;
+	right: 40%;
+	text-align: right;
+	top: 35%;
+}
+
+#txtThermostat {
+	position: fixed;
+	left: 35%;
+	top: 40%;
+}
+
+#tdValeurThermostat {
+	position: fixed;
+	right: 40%;
+	text-align: right;
+	top: 40%;
+}
+
+#nThermostat {
+	position: fixed;
+	left: 78.6%;
+	top: 74%;
+}
+
+#nThermometre {
+	position: fixed;
+	left: 7.5%;
+	top: 74%;
+}
+
+
+.grad {
+	position: fixed;
+	width: 2%;
+	text-align: right;
+	right: 13.5%;
+	color: #444477;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: #eeeeee;
+  border: 1px solid blue;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: none;
+  background-color: #a40000;
+}

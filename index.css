@@ -80,3 +80,13 @@
 	text-align: right;
 	top: 40%;
 }
+
+.grad {
+	position: fixed;
+	width: 2%;
+	text-align: right;
+	right: 13.5%;
+	color: #444477;
+	font-weight: bold;
+	font-size: 120%;
+}

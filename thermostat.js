@@ -1,5 +1,5 @@
 console.log(1);
-$("#thermostat").slider({
+var slider = $("#thermostat").slider({
 					orientation: "vertical",
 					range: "min",
 					min: -10,
@@ -8,7 +8,7 @@ $("#thermostat").slider({
 				});
 				
 $("#thermostat").slider({
-    change: function(event, ui) {
+    slide: function(event, ui) {
       $("#tdValeurThermostat").text( ui.value );
     }
   });
@@ -21,5 +21,10 @@ var progressbar = $("#thermometre").progressbar({
 progressbar.children().css("background", "#a40000");
 progressbar.removeClass("ui-corner-all");
 progressbar.children().removeClass("ui-corner-left");
+slider.css("border", "1px solid #8888ff");
+slider.css("background", "#d9d9e7");
+$(".ui-slider-handle").css("border", "1px solid #8888ff");
+$(".ui-slider-range").css("background", "#b9b9c7");
+$(".ui-slider-range").removeClass("ui-corner-all");
 
 console.log(2);

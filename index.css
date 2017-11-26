@@ -81,6 +81,18 @@
 	top: 40%;
 }
 
+#nThermostat {
+	position: fixed;
+	left: 78.6%;
+	top: 74%;
+}
+
+#nThermometre {
+	position: fixed;
+	left: 7.5%;
+	top: 74%;
+}
+
 .grad {
 	position: fixed;
 	width: 2%;

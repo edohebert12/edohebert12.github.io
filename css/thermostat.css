@@ -27,13 +27,15 @@ html {
 }
 
 #temperature {
-	position: relative;
+	position: fixed;
 	font-size: 150%;
 	font-weight: bold;
-	width: 8%;
+	text-align: center;
+	color: white;
+	width: 30%;
 	height: 5%;
-	top: 45%;
-	left: 0.8%;
+	top: 67.8%;
+	left: -2.95%;
 }
 
 #thermostat {
